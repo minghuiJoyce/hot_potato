@@ -212,10 +212,6 @@ int main(int argc, char * argv[]) {
     }
   }
 
-  /*	char shutDown[512];
-	recv(playerClient, shutDown, 512, 0);
-	shutDown[511] = 0;
-	if(strcmp(shutDown, "close")==0){*/
   freeaddrinfo(playerInfoList);
   close(leftClient_fd);
   close(rightHost_fd);
